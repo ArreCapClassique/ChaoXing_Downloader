@@ -1,7 +1,6 @@
 from selenium import webdriver
 import time,os,re
 
-
 def initialize():
     username = driver.find_element_by_id('unameId')
     password = driver.find_element_by_id('passwordId')
@@ -15,18 +14,21 @@ def initialize():
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {'download.default_directory': os.path.realpath(__file__)[:-7]+'Downloads'})   #下载路径
-link = input('Plz copy the link here: ')
+link = input('Plz paste the link here: ')
 driver = webdriver.Chrome(executable_path=os.path.realpath(__file__)[:-7]+'chromedriver.exe',chrome_options=options)
 driver.get(link)
 time.sleep(1)
 initialize()
-driver.switch_to.frame('iframe')
-li = driver.find_elements_by_xpath('//*/iframe')
+if 'studentstudy' in link:
+    driver.switch_to.frame('iframe')
+    li = driver.find_elements_by_xpath('//*/iframe')
+elif 'coursedata' in link:
+    li = driver.find_elements_by_xpath('//*/tr')
 li = [i.get_attribute('objectid') for i in li]
 for i in li :
     try:
         driver.get('http://d0.ananas.chaoxing.com/download/'+i)
-        print('successfully downloaded')
+        print('successfully downloaded '+'(ID: '+i+')')
     except Exception as ex:
         print(ex)
     finally:
