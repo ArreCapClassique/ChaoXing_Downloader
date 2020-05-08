@@ -5,7 +5,7 @@ def captcha_discern():
     client = chaojiying.Chaojiying_Client('','','')     #依次输入超级鹰平台的 用户名，密码，软件ID
     with open('captcha.png', 'rb') as f:
         image = f.read()
-        captcha = client.PostPic(image,1004)['pic_str']
+        captcha = client.PostPic(image,1902)['pic_str']
     print('captcha discerned: '+captcha)
     return captcha
 
