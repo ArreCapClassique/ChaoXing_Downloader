@@ -38,7 +38,7 @@
 	更新main.py文件，可以下载“资料”里的资源了  
 
 5/8/2020：  
-	上传chaojiying.py文件
+	上传chaojiying.py文件  
 	更新main.py文件，可以自动识别验证码了
 
 
