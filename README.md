@@ -1,6 +1,8 @@
 # ChaoXing_Downloader
 ## 简介：  
 用于超星平台课程界面没有下载按钮的资源（包括PPT、MP4、MP3）的下载，基于selenium库，下载依赖于Chrome浏览器  
+  
+[B站视频讲解说明](https://www.bilibili.com/video/BV1ug4y1B7p1)
  
  
  
@@ -26,7 +28,7 @@
 3. 在超级鹰平台注册，并生成一个软件ID
 4. 在main.py文件中修改超星的用户名、密码**【不要用平台登录】**、下载路径、超级鹰的用户名、密码、软件ID  
 5. 运行main.py文件，在终端输入资源所在链接
-6. 回车
+6. 回车  
 
 
 
