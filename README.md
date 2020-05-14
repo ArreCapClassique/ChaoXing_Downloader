@@ -23,9 +23,10 @@
 ## 使用方法：
 1. 查看自己谷歌浏览器版本号，找到对应版本的[Chromedriver](http://npm.taobao.org/mirrors/chromedriver/)下载并放在main.py所在文件夹中（[如何查找浏览器版本对应的driver](http://www.baidu.com)）
 2. cmd运行 ``pip install -r requirements.txt``
-3. 在main.py文件中修改用户名、密码、下载路径 **【不要用平台登录】**
-4. 运行main.py文件，在终端输入资源所在链接
-5. 回车
+3. 在超级鹰平台注册，并生成一个软件ID
+4. 在main.py文件中修改超星的用户名、密码**【不要用平台登录】**、下载路径、超级鹰的用户名、密码、软件ID  
+5. 运行main.py文件，在终端输入资源所在链接
+6. 回车
 
 
 
