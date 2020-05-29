@@ -29,14 +29,11 @@ def downloader():
         li = driver.find_elements_by_xpath('//*/iframe')
     elif 'coursedata' in link:
         li = driver.find_elements_by_xpath('//*/tr')
-    li = [i.get_attribute('objectid') for i in li]
+    li = {i.get_attribute('objectid') for i in li}
     for i in li :
-        try:
+        if i:
             driver.get('http://d0.ananas.chaoxing.com/download/'+i)
             print('successfully downloaded '+'(ID: '+i+')')
-        except Exception as ex:
-            print(ex)
-        finally:
             time.sleep(1)
 
 if __name__ == "__main__":
