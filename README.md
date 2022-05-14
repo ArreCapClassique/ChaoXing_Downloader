@@ -2,7 +2,7 @@
 ## 简介：  
 用于超星平台课程界面没有下载按钮的资源（包括PPT、MP4、MP3）的下载，基于selenium库，下载依赖于Chrome浏览器  
   
-[B站视频讲解说明](https://www.bilibili.com/video/BV1ug4y1B7p1)
+~~[B站视频讲解说明](https://www.bilibili.com/video/BV1ug4y1B7p1)~~ 视频被铁拳了
  
  
  
@@ -51,7 +51,9 @@
 	居然真的有人去B站催我更新  
 	更新main.py文件，不可以下载“资料”里的资源了（反正人家自带批量下载  
 	删除chaojiying.py文件（反正也不需要验证码了
-
+	
+**5/14/2022：  
+	微调main.py，可能存在无法下载页面内所有资源的情况，系超星网页改版导致的iframe嵌套导致，因个人时间原因暂无时间修改**
 
 
 ## 作者：
